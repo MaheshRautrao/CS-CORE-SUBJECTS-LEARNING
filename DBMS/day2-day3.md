@@ -71,3 +71,66 @@ data. <br>
 |------------------|--------------------|----------------|
 |--> simple : can not be divided further. e.g roll number <br> --> composite : can be further divided. e.g name into first name, last name. <br> --> simple is represented by simple oval connected to rectangle but composite is represented as oval connected to oval. |--> single valued can have only one value at a instance of time <br>--> multivalued can have more than one value <br>--> e.g : roll number is single valued but phone number is multivalued. <br>--> multivalued is represented as oval in oval in E-R diagram and as a seperate table in relational model using primary key. |--> stored : value is stored in database e.g date of birth. <br>--> derived : value is computed at runtime using the stored attribute. <br>--> derived is shown by dotted oval in E-R diagram and as a normal column in reational model. |
 
+## 2.4 Relationship in an ER Diagram
+
+- Relationship : <br>
+  It is an association between two or more entities of same or different entity set <br>
+  --> no representation in E-R diagram as it is an instance or data. <br>
+  --> In relational model represented either using a row in a table. <br>
+
+- Relationship type/set : <br>
+  a set of similar type of relationship <br>
+  --> In E-R diagram it is represented using diamond.<br>
+  --> In relational model either by a seperate table or by seperate column (foreign key) <br>
+
+- Every relationship type has three components <br>
+
+  - Name
+  - Degree
+  - Cardinality ratio / Participation constraints
+
+<img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/6b1190c2-fd81-4356-8bac-cd810f4982fa"  width="600" >
+
+## 2.5 Degree of a Relationship in a ER Diagram
+
+   Means number of entity set associated (participated) in the relationship set. <br>
+   --> Most of relationship sets in the E-R diagram are binary (industry). Occasionally however relationship sets involve more than two entity sets. <br> 
+   
+   - Unary : <br>
+   <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/f326b6d8-4050-4e13-9424-d51ce4331c88"  width="600" >
+   
+   - Binary : <br>
+   <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/55dddfbd-1791-4ed2-9186-32fe6424c229"  width="600" >
+  
+   - Tertiary : <br>
+   <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/055331c6-e61d-4fbe-9b79-651dcf5b166a"  width="600" >
+ 
+   - Quaternary : <br>
+   <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/e3beb8a6-7add-4b38-81c8-3acdde8563ae"  width="600" >
+
+   - N-ary : <br>
+   <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/59b83fa3-b555-4455-ac49-f66d2fe5c510"  width="600" >
+   
+## 2.6 Mapping Cardinalities and Cardinality Ratio in ER diagram
+
+   Express the numebr of entities to which often entity can be related vai a relationship. <br>
+   --> can be used in describing relationship set of any degree but is most useful in binary relationship
+
+   - 1:1 (one to one)
+   - 1:N (one to many)
+   - N:1 (many to one)
+   - M:N (many to many)
+
+     NOTE : Here one means not exactly one it means at most one and n means at most n (think carefully so if no one is related to no one it is okay)
+   
+   <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/9f4755f3-02e5-4979-bbdf-5e02f674c594"  width="400" height="300">
+   
+   <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/71117ede-0041-4154-b6ae-662675accbaf"  width="400" height="300">
+   
+   <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/7cf4cb08-4109-40d4-901a-a533e024e5d0"  width="400" height="300">
+   
+   <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/12e06ace-0451-4227-9d95-fed85dc887b7"  width="400" height="300">
+
+   <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/"  width="400" height="300">
+   
+  
