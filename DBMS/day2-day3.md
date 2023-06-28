@@ -133,5 +133,23 @@ data. <br>
 
    <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/4d3b5ec2-cae9-432b-928f-dc4ce1a09c12"  width="400" height="300">
    
+   
+## 2.7 Participation Constraints in E-R Diagram
 
+   Specifies whether the existance of an entity depends on its being related to another entity via a relationship type. <br>
+   These constraints specify the minimum and maximum number of relationship instances that each entity can or must participate in. <br>
 
+   - Maximum cardinality : <br>
+     It defines the maximum number of times an entity occurance participating in a relationship. <br>
+
+   - Minimum cardinality : <br>
+     It defines the minimum number of times an entity occurance participating in a relationship. <br>
+
+   - Partial participation : if the minimum cardinality is 0 then there may be someone who is not participating so it means partial participation. <br>
+
+   - Total participation : if the minimum cardinality is > 0 then all have to participate at least once so it means total participation. <br>
+
+   - different representations : <br>
+     e.g project has min cardinality of 3 and maximum of 15 and employee has min 0 and max 2. <br>
+     
+     ![Screenshot 2023-06-28 095311](https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/d591eab8-2473-4d45-bf8c-846855a52c16)
