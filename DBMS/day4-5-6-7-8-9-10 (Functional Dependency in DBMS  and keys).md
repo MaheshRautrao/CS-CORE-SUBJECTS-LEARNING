@@ -141,8 +141,72 @@ for a relation R there are two attributes <br>
      - Pseudo transitivity : if X --> Y && WX --> Z then WX --> Z  <br>
      - Composition : if x --> Y && Z --> W then XZ -->YW <br>
 
+     ## Closure set of attributes examples
+
+     - example 1 : <br>
+
+       R ( ABCDEFG ) <br>
+
+       1. A --> B 
+       2. BC --> DE 
+       3. AEG --> G
+
+          (AC)<sup>+</sup> = AC = ABC = ABCDE <br>
+          (AC)<sup>+</sup> = ABCDE <br>
+
+
+       R ( ABCDE ) <br>
+
+       1. A --> BC
+       2. CD --> E
+       3. B --> D
+       4. E --> A
+       
+          (B)<sup>+</sup> = B = BD <br>
+          (B)<sup>+</sup> = BD <br>
+
+       R ( ABCDEF ) <br>
+
+       1. AB --> C
+       2. BC --> AD
+       3. D --> E
+       4. CF --> B
+       
+          (AB)<sup>+</sup> = AB = ABC = ABCD = ABCDE <br>
+          (AB)<sup>+</sup> = ABCDE <br>
+
+       R ( ABCDEFGH ) <br>
+
+       1. A --> BC
+       2. CD --> E
+       3. E --> C
+       4. D --> AEH
+       5. ABH --> BD
+       6. DH --> BC
       
-   
-    
-  
+          BCD --> H ?? Is it a valid functional dependancy <br>
+          if BCD Contain H in its closure set then yes.
+       
+          (BCD)<sup>+</sup> = BCD = BCDE = ABCDEH So yes it is a functional dependancy.
+      
+ ## Equivalance of functional dependancy
+ 
+ ## 3.6 Equivalence Of Functional Dependencies
+ <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/8f18b675-5888-49ae-8c21-325d5c3bd9c6" width="600px" >
+ 
+ ## 3.7 Equivalence Of Functional Dependencies Examples
+ <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/de435ba5-19c3-4fe1-9516-e3db082bb118" width="400px" >
+ <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/ec4076eb-267d-46eb-87e1-caa4ad391ce2)" width="400px" >
+ <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/bcc2ee81-d9cc-4236-ae54-cfb9e84fbbec" width="400px" >
+ <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/612cabde-1120-405f-bf89-176df2b8458f" width="400px" >
+ 
+ ## 3.8 Minimal Cover or Canonical Cover or Irreducible set of Functional Dependencies
+ <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/c0426030-1d3e-4376-a04f-e21636951872" width="600px" >
+
+ ## 3.9 Practice questions on Minimal Cover or Canonical Cover or Irreducible set
+ <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/7243e782-cac7-45a0-a424-00d957b887a7" width="400px" >
+ <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/e32197cd-0f73-4b2f-a999-093ed8667de1" width="400px" >
+ <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/7efe0fb3-6adc-4d26-abf4-fcf9baae457e" width="400px" >
+ <img src="https://github.com/MaheshRautrao/CS-CORE-SUBJECTS-LEARNING/assets/101188065/74552d9e-5e11-4020-a859-7a3a504d9181" width="400px" >
+
   
